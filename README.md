@@ -1,5 +1,3 @@
----
-
 # **Marketplace AI Crew** 🚀  
 **A fully autonomous AI-powered system for object recognition, pricing analysis, and automated marketplace listing.**  
 
