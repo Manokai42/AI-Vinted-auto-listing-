@@ -13,7 +13,7 @@ def scrape_vinted(query):
         results = []
         for item in items[:5]:  # Limit to 5 results
             title = item.find("span", class_="title").text if item.find("span", class_="title") else "No title"
-            price = item.find("span", class="price").text if item.find("span", "price") else "No price"
+            price = item.find("span", class_="price").text if item.find("span", class_="price") else "No price"
             link = item.find("a")["href"] if item.find("a") else "No link"
             results.append({"title": title, "price": price, "link": link})
         
