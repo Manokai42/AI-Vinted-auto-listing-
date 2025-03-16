@@ -22,7 +22,7 @@ jobs:
         run: |
           echo "{\n  \"github.copilot.chat.codeGeneration.instructions\": [\n    { \"text\": \"Always use the latest and best practices for the relevant programming language and framework.\" },\n    { \"text\": \"Write clean, readable, and maintainable code with consistent formatting.\" },\n    { \"text\": \"Add comments to explain complex logic and non-obvious decisions.\" },\n    { \"text\": \"Use TypeScript for all code suggestions where applicable.\" },\n    { \"text\": \"Always use React functional components for frontend development.\" },\n    { \"text\": \"Follow the Airbnb JavaScript Style Guide for JavaScript/TypeScript code.\" },\n    { \"text\": \"Follow the PEP 8 Style Guide for Python code.\" }\n  ]\n}" > settings.json
 
-      - name: Commit and Push Changes
+            - name: Commit and Push Changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -32,3 +32,4 @@ jobs:
             git push origin main
           else
             echo "No changes to commit"
+          fi
